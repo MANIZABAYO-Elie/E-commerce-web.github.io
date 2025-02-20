@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="stylesheet" href="./src/output.css">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-       <title>E-Commerce Website</title>
-
-</head>
-<body class="bg-gray-100">
-       <!-- navigation bar -->
-     <nav class="bg-gray-700 shadow">
-        <div class=" flex justify-between items-center mx-auto container">
-           <div class="store ">
-               <a href="#">
-                  <img src="./images/logo-store-official.jpg" alt="shop logo" class="w-[170px] h-[170px]">
-               </a>
-           </div>
-           <img src="./humburger.jpg" class="w-[80px] h-[60px] ml-[100px]">
-           </div>
-           <!-- mobile menu -->
-           <div class=" lg:hidden hidden mt-2" id="mobile-menu">
-               <a href="#" class="block text-white py-2 hover:bg-blue-500">Home</a>
-               <a href="#" class="block text-white py-2 hover:bg-blue-500">About</a>
-               <a href="#" class="block text-white py-2 hover:bg-blue-500">Services</a>
-               <a href="#" class="block text-white py-2 hover:bg-blue-500">Contact</a>
-           </div>
-           <div class="flex gap-[30px] mr-[300px]">
-                 <a href="#" class="text-white hover:text-gray-900">Home</a>
-                 <a href="#" class="text-white hover:text-gray-900">About Us</a>
-                 <a href="#" class="text-white hover:text-gray-900">Shop</a>
-                 <a href="#" class="text-white hover:text-gray-900">Contact Us</a>
-                 <a href="#" class="text-white hover:text-gray-900">Cart</a>
-           
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Explore the world</title>
+  </head>
+  <body>
+    <header class="header active">
+      <!-- Navbar -->
+      <nav class="bg-gray-900">
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- Logo or Brand -->
+          <a href="#"
+            ><img src="./images/logo-store-official.jpg" class="w-[200px] h-[100px]"
+          /></a>
+          
+          <button class="md:hidden mr-20px sm:mr-[30px]">
+              <i class="fa-solid fa-bars text-white text-4xl" id="menu-btn"></i>
+          </button>
+          <!--menu for large screens -->
+            <ul id="menu" class="hidden md:flex space-x-6 text-white lg:mr-[80px]">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">About</a></li>
+                <li><a href="#" class="hover:underline">Shopping</a></li>
+                <li><a href="#" class="hover:underline">Cart</a></li>
+            </ul>
         </div>
-     </nav>
-
-     <!-- welcome section -->
-     <div>
-      
-     </div>
-
+        <!--Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden flex-col bg-gray-500 text-white space-y-2 p-4 text-center ">
+            <a href="#" class="block hover:underline">Home</a>
+            <a href="#" class="block hover:underline">About</a>
+            <a href="#" class="block hover:underline">Shopping</a>
+            <a href="#" class="block hover:underline">Contact Us</a>
+            <a href="#" class="block hover:underline">Contact Us</a>
+            <a href="#" class="block hover:underline">Cart</a>
+        </div>
+          
+       </div>
+      </nav>
+    </header>
 </body>
 </html>
