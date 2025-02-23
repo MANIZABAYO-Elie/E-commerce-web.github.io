@@ -1,1 +1,18 @@
 @import "tailwindcss";
+/* style for background images transtions */
+        @keyframes changeBackground {
+            0% {
+                background-image: url('/images/jeans1.jpg');
+            }
+            50% {
+                background-image: url('/images/best-jeans.webp');
+            }
+            100% {
+                background-image: url('/images/store-bg.jpg');
+            }
+        }
+
+        .background-transition {
+            animation: changeBackground 10s infinite;
+        }
+    
